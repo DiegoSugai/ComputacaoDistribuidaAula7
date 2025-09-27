@@ -1,0 +1,33 @@
+// urls.proto
+syntax = "proto3";
+
+package encurtador;
+
+// O serviço principal que define os métodos RPC.
+service EncurtadorURL {
+  // RPC para encurtar uma URL longa.
+  rpc EncurtarURL (RequisicaoEncurtar) returns (RespostaEncurtar) {}
+
+  // RPC para obter a URL longa a partir de um código curto.
+  rpc ObterURLLonga (RequisicaoObter) returns (RespostaObter) {}
+}
+
+// Mensagem de requisição para o método EncurtarURL.
+message RequisicaoEncurtar {
+  string url_longa = 1;
+}
+
+// Mensagem de resposta para o método EncurtarURL.
+message RespostaEncurtar {
+  string url_curta = 1;
+}
+
+// Mensagem de requisição para o método ObterURLLonga.
+message RequisicaoObter {
+  string codigo_curto = 1;
+}
+
+// Mensagem de resposta para o método ObterURLLonga.
+message RespostaObter {
+  string url_longa = 1;
+}

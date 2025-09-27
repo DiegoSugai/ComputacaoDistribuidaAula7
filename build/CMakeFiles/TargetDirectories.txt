@@ -1,0 +1,4 @@
+/workspaces/ComputacaoDistribuidaAula7/build/CMakeFiles/generate_proto_files.dir
+/workspaces/ComputacaoDistribuidaAula7/build/CMakeFiles/cliente.dir
+/workspaces/ComputacaoDistribuidaAula7/build/CMakeFiles/edit_cache.dir
+/workspaces/ComputacaoDistribuidaAula7/build/CMakeFiles/rebuild_cache.dir
